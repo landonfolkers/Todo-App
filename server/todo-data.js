@@ -1,13 +1,15 @@
-let todosCreated = 1;
+let todosCreated = 3;
 let todos = [{
 	id: 1,
 	text: 'Finish coding exercise',
-}];
+	finished: false
+}]
 
 export default class TodoData {
 	static create(todo) {
 		return new Promise((resolve) => {
 			todo.id = ++todosCreated;
+			todo.finished = false
 			todos.push(todo);
 			resolve(todo);
 		});
@@ -26,10 +28,12 @@ export default class TodoData {
 		})
 	}
 
-	static update(id, todo) {
+	static update(id, body) {
 		return new Promise((resolve, reject) => {
-			// TODO: Implement
-			reject('Not Implemented');
+			const todoIndex = todos.findIndex(todo => todo.id.toString() === id.toString());
+			if (todoIndex < 0 || todoIndex >= todos.length) return reject();
+			todos[todoIndex].finished = body.finished
+			resolve();
 		})
 	}
 }

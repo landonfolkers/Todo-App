@@ -1,0 +1,68 @@
+
+h1 {
+    font-family:'Black Ops One';
+    font-size: 50px;
+}
+h2 {
+    font-family:'Black Ops One';
+    font-size: 50px;
+}
+h3 {
+    font-family:'Black Ops One';
+    font-size: 30px;
+}
+li {
+    font-family:'Black Ops One';
+    font-size: 20px;
+}
+label {
+    padding-top: 100px;
+    text-decoration: underline;
+}
+.view label {
+    padding-top: 0px;
+}
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.list {
+    margin-top: 20px;
+}
+input {
+    width: 200px;
+    height: 25px
+}
+.delete {
+    color: white;
+    background-color: red;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+.update {
+    color: white;
+    background-color: green;
+    border-radius: 8px;
+}
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+ul {
+    list-style: none;
+    margin-left: -20px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 500px;
+    height: 400px;
+}

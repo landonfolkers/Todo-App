@@ -5,7 +5,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import bodyParser from 'body-parser';
 import TodoRoutes from './todo-routes';
 
-const APP_PORT = 3001;
+const APP_PORT = 3000;
 
 const compiler = webpack({
 	mode: 'development',
@@ -16,9 +16,13 @@ const compiler = webpack({
 				test: /\.js$/,
 				exclude: /\/node_modules\//,
 				use: {
-					loader: 'babel-loader',
+					loader: 'babel-loader'
 				},
 			},
+			{
+				test: /\.css$/,
+				loader: ['style-loader', 'css-loader']
+			  }
 		],
 	},
 	output: {
