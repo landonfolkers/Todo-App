@@ -54,15 +54,15 @@ We kept this exercise smaller and unopinionated in the hopes that you will be mo
 If you're pressed on time and can only commit the 2-4 hours for the minimum acceptance criteria, **we won't hold this against you**.  Simply add some comments to your code to express what you would like to add if you had the time.
 
 Some extras you may consider adding:
-- Dockerize the things
+- Dockerize the things X
 - Component library (Material, Bootstrap, etc)
 - Type checking (TypeScript, Flow, etc)
-- Styling
+- Styling X
 - State management framework (Redux, Relay, etc)
 - Use more Babel features
 - Style checking (JSHint, ESLint, Prettier, etc)
 - Persistent store (Redis, MySQL, pSQL, etc)
-- Test framework
+- Test framework X
 - etc..
 
 > **Don't go overboard**.. we suggest picking just one or two things to add that you would like to discuss with the engineers reviewing your code.
