@@ -22,19 +22,19 @@ export default class TodoApp extends React.Component {
 			.then(todos => {
 				let ongoing = []
 				let done = []
-				for (let i = 0; i < todos.length; i++) {
-					if (todos[i].finished === false) {
-						ongoing.push(todos[i])
+					todos.map(todo => {
+					if (todo.finished === false) {
+						ongoing.push(todo)
 						this.setState({
 							todos: ongoing
 						})
-					} else if (todos[i].finished === true) {
-						done.push(todos[i])
+					} else if (todo.finished === true) {
+						done.push(todo)
 						this.setState({
 							finished: done
 						})
 					}
-				}
+				})
 			})
 			.catch(() => alert('There was an error getting todos'));
 	};
